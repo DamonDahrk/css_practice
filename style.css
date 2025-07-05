@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+.logo {
+  width: 150px;   /* Adjust width as needed */
+  /* height: auto;   Keeps aspect ratio */
+  object-fit: contain; /* Ensures the logo fits within the specified width */
+}
+
+.container {
+  background: linear-gradient(135deg, #8a2be2, #4169e1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem; /* Adds 2 rem units on all four sides (top, right, bottom, left). */
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+h1 {
+  color: #666;
+  margin-bottom: 20px;
+}
+p{
+    color: #000000;
+    margin-bottom: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #4169e1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #3658b0;
+}
+
