@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-3xl font-bold underline text-center mt-10">
+        Hello world!
+    
+</body>
+</html>
+
+<!-- What's happening with Tailwind is that in every container/content's class itself we are defining the styles. For example, in the above code, we have defined the text size,
+font weight, underline, text alignment and margin-top in the class itself. It follows a
+ CSS on JS approach thus. 
+ 
+ You can search for the syntax in tailwindcss website
+ 
+ Tailwind is mobile first approach
+ 
+ sm :text-3xl text-sm  (it will apply bif text to laptop screens and small text on mobiles)
+ in mobile either the content should occpy the entire space or at most two grids, otherwise it will look untidy. in laptop there is equal section
+ and non equal section-->
+
+ <!-- <div class="m-4 grid gap-4 sm:grid-cols-3">
+  <div class="min-h-[100px] rounded-lg bg-orange-500 shadow"></div>
+  <div class="min-h-[100px] rounded-lg bg-teal-500 shadow"></div>
+  <div class="min-h-[100px] rounded-lg bg-red-500 shadow"></div>
+</div> -->
+<!-- 
+<div class="m-4 grid grid-cols-1 gap-4 sm:grid-cols-12">
+  <div class="min-h-[100px] rounded-lg bg-orange-500 shadow sm:col-span-2"></div>
+  <div class="min-h-[100px] rounded-lg bg-teal-500 shadow sm:col-span-10"></div>
+</div> -->
+
+<!-- This is unequal logic because sm is taking care of bigger screen so we are mentioning the unequal segmentation like that and the original non sm gridding is taken care of manually by us, thereby preserving the unequal for lap and equal blocs for phones.  -->
